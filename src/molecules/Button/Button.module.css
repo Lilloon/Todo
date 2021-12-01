@@ -1,0 +1,22 @@
+.button{
+    height: 42px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: 0.15s ease;
+    background: #008BC7;
+    border-radius: 7px;
+    border: none;
+}
+.button:hover{
+    -webkit-box-shadow: 0px 0px 10px 5px #008BC7;
+    -moz-box-shadow: 0px 0px 10px 5px #008BC7;
+    box-shadow: 0px 0px 10px 5px #008BC7        ;
+}
+
+
+  
+  .button:active {
+    -webkit-box-shadow: 0px 0px 10px 1px #008BC7;
+    -moz-box-shadow: 0px 0px 10px 1px #008BC7;
+    box-shadow: 0px 0px 10px 1px #008BC7 
+  }

@@ -1,13 +1,11 @@
 html {
     height: 100%;
     font-family: 'Jura', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
 }
 
 #root {
     height: 100%;
-    background-color: #E5E5E5;
+    background-color: #2E2E2E;
 }
 body {
     height: 100%;
