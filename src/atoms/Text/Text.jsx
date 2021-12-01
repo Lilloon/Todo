@@ -5,7 +5,7 @@ export default class Text extends React.Component {
     render(){
         this.text = this.props.text;
         return (
-            <div className={style.textx}>
+            <div className={style.text}>
                 {this.text}
             </div>
         )
