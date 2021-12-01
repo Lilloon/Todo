@@ -1,0 +1,44 @@
+.input {
+    height: 42px;
+    width: 95%;
+    background: #E8E8E8;
+    font-family: 'Jura', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 22px;
+    border-radius: 30px;
+    border: 2px solid #008BC7;
+    padding-left: 15px ;
+    padding-bottom: 5px;
+    outline: none;
+    transition: 0.15s ease;
+}
+
+.input:hover{
+    -webkit-box-shadow: 0px 0px 10px 1px #008BC7;
+    -moz-box-shadow: 0px 0px 10px 1px #008BC7;
+    box-shadow: 0px 0px 10px 1px #008BC7 
+}
+
+.input:focus {
+    -webkit-box-shadow: 0px 0px 10px 5px #008BC7;
+    -moz-box-shadow: 0px 0px 10px 5px #008BC7;
+    box-shadow: 0px 0px 10px 5px #008BC7 
+}
+
+.error {
+    border: 2px solid #FF6565;
+
+}
+.error:hover{
+    -webkit-box-shadow: 0px 0px 10px 1px #FF6565;
+    -moz-box-shadow: 0px 0px 10px 1px #FF6565;
+    box-shadow: 0px 0px 10px 1px #FF6565 
+}
+
+.error:focus {
+    -webkit-box-shadow: 0px 0px 10px 5px #FF6565;
+    -moz-box-shadow: 0px 0px 10px 5px #FF6565;
+    box-shadow: 0px 0px 10px 5px #FF6565 
+}
+
