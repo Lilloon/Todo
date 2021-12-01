@@ -17,7 +17,7 @@ export default class Input extends React.Component{
         };
 
        return (
-           <input value={this.state.value} onChange={this.onChange} onKeyPress={this.handler ? this.onEnterPressed : (() => {})} />
+           <input className={style.input} value={this.state.value} onChange={this.onChange} onKeyPress={this.handler ? this.onEnterPressed : (() => {})} />
        )
     }
 }
