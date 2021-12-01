@@ -1,4 +1,18 @@
+html {
+    height: 100%;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
 
+#root {
+    height: 100%;
+    background-color: #E5E5E5;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
 
 
 
