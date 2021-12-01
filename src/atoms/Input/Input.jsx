@@ -10,6 +10,7 @@ export default class Input extends React.Component{
     render() {
         this.handler = this.props.Handler;
         this.onChange =  this.props.onChange;
+        this.placeholder = this.props.placeholder
         const onEnterPressed = (e) => {
           if ( e.key === 'Enter') {
             this.handler();
@@ -17,7 +18,11 @@ export default class Input extends React.Component{
         };
 
        return (
-           <input className={style.input} value={this.state.value} onChange={this.onChange} onKeyPress={this.handler ? this.onEnterPressed : (() => {})} />
+           <input placeholder={this.placeholder}
+            className={style.input} value={this.state.value}
+            onChange={this.onChange}
+            onKeyPress={this.handler ? this.onEnterPressed : (() => {})}
+           />
        )
     }
 }
