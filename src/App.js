@@ -1,12 +1,13 @@
 import './App.css';
-import Button from './molecules/Button/Button'
 
-function App() {
-  return (
-    <div className="App">
-      <Button onClick={() => {console.log('Hi!')}} text='Нажми на меня!'/>
-    </div>
-  );
+import React from 'react';
+
+export default class App extends React.Component {
+  render(){
+    return (
+      <div className="App">
+        
+      </div>
+    );
+  }
 }
-
-export default App;

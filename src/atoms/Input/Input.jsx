@@ -2,12 +2,9 @@ import React from "react";
 import style from './Input.module.css';
 
 export default class Input extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {  value: this.props.value }
-    }
-
     render() {
+        this.isError = this.props.isError;
+        this.value = this.props.value;
         this.handler = this.props.Handler;
         this.onChange =  this.props.onChange;
         this.placeholder = this.props.placeholder
@@ -16,12 +13,17 @@ export default class Input extends React.Component{
             this.handler();
           };
         };
+        const changeHandler = (e) => {
+            this.onChange(e.target.value)
+        }
 
        return (
-           <input placeholder={this.placeholder}
-            className={style.input} value={this.state.value}
-            onChange={this.onChange}
-            onKeyPress={this.handler ? this.onEnterPressed : (() => {})}
+           <input
+            placeholder={!this.isError ? this.placeholder : 'Поле должно быть заполнено'}
+            className={`${style.input} ${this.isError ? style.error: ''}`}
+            value={this.value}
+            onChange={changeHandler}
+            onKeyPress={this.handler ? onEnterPressed : (() => {})}
            />
        )
     }
