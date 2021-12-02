@@ -1,0 +1,46 @@
+.textArea{
+    resize: none;
+    height: 300px;
+    width: 95%;
+    outline: none;
+    background: #E8E8E8;
+    font-family: 'Jura', sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 22px;
+    border-radius: 30px;
+    border: 2px solid #008BC7;
+    padding-left: 30px ;
+    padding-right: 30px ;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    transition: 0.15s ease;
+}
+
+.textArea:hover{
+    -webkit-box-shadow: 0px 0px 10px 1px #008BC7;
+    -moz-box-shadow: 0px 0px 10px 1px #008BC7;
+    box-shadow: 0px 0px 10px 1px #008BC7 
+}
+
+.textArea:focus {
+    -webkit-box-shadow: 0px 0px 10px 5px #008BC7;
+    -moz-box-shadow: 0px 0px 10px 5px #008BC7;
+    box-shadow: 0px 0px 10px 5px #008BC7 
+}
+
+.error {
+    border: 2px solid #FF6565;
+
+}
+.error:hover{
+    -webkit-box-shadow: 0px 0px 10px 1px #FF6565;
+    -moz-box-shadow: 0px 0px 10px 1px #FF6565;
+    box-shadow: 0px 0px 10px 1px #FF6565 
+}
+
+.error:focus {
+    -webkit-box-shadow: 0px 0px 10px 5px #FF6565;
+    -moz-box-shadow: 0px 0px 10px 5px #FF6565;
+    box-shadow: 0px 0px 10px 5px #FF6565 
+}
