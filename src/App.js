@@ -1,17 +1,10 @@
-import './App.css';
-import React from 'react';
-import Color from './atoms/Color/Color';
-
+import "./App.css";
+import React from "react";
+import Color from "./atoms/Color/Color";
+import Radio from "./molecules/Radio/Radio";
 
 export default class App extends React.Component {
-  render(){
-    return (
-      <div className="App">
-        <Color color='green' />
-        <Color color='red' />
-        <Color color='blue' />
-        <Color color='white' />
-      </div>
-    );
+  render() {
+    return <div className="App"></div>;
   }
 }
