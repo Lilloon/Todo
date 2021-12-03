@@ -1,0 +1,63 @@
+{
+  "extensions.ignoreRecommendations": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "vetur.format.enable": true,
+  "editor.formatOnType": false,
+  "editor.minimap.maxColumn": 80,
+  "breadcrumbs.enabled": true,
+  "editor.fontLigatures": false,
+  "editor.fontSize": 18,
+  "editor.fontWeight": "400",
+  "editor.tabSize": 4,
+  "files.eol": "\n",
+  "editor.occurrencesHighlight": false,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.rulers": [80],
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  // "workbench.tree.indent": 6,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.fontFamily": "monospace",
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.editor.showTabs": true,
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#553333"
+  },
+  "window.restoreFullscreen": true,
+  "tabnine.experimentalAutoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "explorer.confirmDelete": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "mongoRunner": {
+    "connections": [
+      {
+        "name": "users",
+        "url": "mongodb://localhost:27017/users"
+      }
+    ]
+  },
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "explorer.compactFolders": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

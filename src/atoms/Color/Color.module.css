@@ -1,0 +1,18 @@
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: 0.15s ease;
+    cursor: pointer;
+}
+
+.innerRect {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
