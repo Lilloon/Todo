@@ -1,10 +1,26 @@
 import "./App.css";
 import React from "react";
-import Color from "./atoms/Color/Color";
-import Radio from "./molecules/Radio/Radio";
 
 export default class App extends React.Component {
   render() {
+    const colors = [
+      {
+        id: 1,
+        color: "red",
+      },
+      {
+        id: 2,
+        color: "blue",
+      },
+      {
+        id: 3,
+        color: "green",
+      },
+      {
+        id: 4,
+        color: "white",
+      },
+    ];
     return <div className="App"></div>;
   }
 }
