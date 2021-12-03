@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import ColorsGroup from "./molecules/ColorsGroup/ColorsGroup";
 
 export default class App extends React.Component {
   render() {
@@ -21,6 +22,10 @@ export default class App extends React.Component {
         color: "white",
       },
     ];
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        <ColorsGroup colors={colors} />
+      </div>
+    );
   }
 }
