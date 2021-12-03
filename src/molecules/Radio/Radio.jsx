@@ -7,6 +7,7 @@ export default class Radio extends React.Component {
   render() {
     this.isActive = this.props.isActive;
     this.onClick = this.props.onClick;
+    this.text = this.props.text;
     const InnerCircle = styled.div`
       width: 15px;
       height: 15px;
@@ -21,7 +22,7 @@ export default class Radio extends React.Component {
         <div className={style.border}>
           <InnerCircle></InnerCircle>
         </div>
-        <Text text="sdasd" />
+        <Text text={this.text} />
       </div>
     );
   }
