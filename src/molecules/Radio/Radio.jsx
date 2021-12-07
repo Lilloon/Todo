@@ -17,6 +17,7 @@ export default class Radio extends React.Component {
       transform: scale(0);
       ${this.isActive ? "transform: scale(1);" : ""};
     `;
+
     return (
       <div className={style.container} onClick={this.onClick}>
         <div className={style.border}>

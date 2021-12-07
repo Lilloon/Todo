@@ -1,7 +1,8 @@
-.text{
-    font-family: 'Jura', sans-serif;
-    color: #BABABA;
-    font-size: 18px;
-    font-weight: 500px;
-    line-height: 22px;
+.text {
+  word-wrap: break-word;
+  font-family: "Jura", sans-serif;
+  color: #bababa;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 22px;
 }
