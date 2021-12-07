@@ -1,15 +1,15 @@
-import { SELECTED_COLOR_TYPES } from "../actions/types";
+import { TASK_TYPES } from "../actions/types";
 
 const defaultState = {
-  selectedColor: { id: 1, color: "red" },
+  taskList: [],
 };
 
 export default function ColorReducer(state = defaultState, action) {
   switch (action.type) {
-    case SELECTED_COLOR_TYPES.SET_SELECTED_COLOR:
+    case TASK_TYPES.ADD_TASK:
       return {
         ...state,
-        selectedColor: { ...action?.$payload },
+        taskList: [...state.taskList, action?.$payload],
       };
     default:
       return state;

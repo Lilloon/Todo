@@ -1,44 +1,44 @@
 .input {
-    height: 42px;
-    width: 95%;
-    background: #E8E8E8;
-    font-family: 'Jura', sans-serif;
-    font-size: 18px;
-    font-weight: 500px;
-    line-height: 22px;
-    border-radius: 30px;
-    border: 2px solid #008BC7;
-    padding-left: 15px ;
-    padding-bottom: 5px;
-    outline: none;
-    transition: 0.15s ease;
+  box-sizing: border-box;
+  height: 42px;
+  width: 100%;
+  background: #e8e8e8;
+  font-family: "Jura", sans-serif;
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 22px;
+  border-radius: 30px;
+  border: 2px solid #008bc7;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  outline: none;
+  transition: 0.15s ease;
+  margin-top: 10px;
 }
 
-.input:hover{
-    -webkit-box-shadow: 0px 0px 10px 1px #008BC7;
-    -moz-box-shadow: 0px 0px 10px 1px #008BC7;
-    box-shadow: 0px 0px 10px 1px #008BC7 
+.input:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px #008bc7;
+  -moz-box-shadow: 0px 0px 10px 1px #008bc7;
+  box-shadow: 0px 0px 10px 1px #008bc7;
 }
 
 .input:focus {
-    -webkit-box-shadow: 0px 0px 10px 5px #008BC7;
-    -moz-box-shadow: 0px 0px 10px 5px #008BC7;
-    box-shadow: 0px 0px 10px 5px #008BC7 
+  -webkit-box-shadow: 0px 0px 10px 5px #008bc7;
+  -moz-box-shadow: 0px 0px 10px 5px #008bc7;
+  box-shadow: 0px 0px 10px 5px #008bc7;
 }
 
 .error {
-    border: 2px solid #FF6565;
-
+  border: 2px solid #ff6565;
 }
-.error:hover{
-    -webkit-box-shadow: 0px 0px 10px 1px #FF6565;
-    -moz-box-shadow: 0px 0px 10px 1px #FF6565;
-    box-shadow: 0px 0px 10px 1px #FF6565 
+.error:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px #ff6565;
+  -moz-box-shadow: 0px 0px 10px 1px #ff6565;
+  box-shadow: 0px 0px 10px 1px #ff6565;
 }
 
 .error:focus {
-    -webkit-box-shadow: 0px 0px 10px 5px #FF6565;
-    -moz-box-shadow: 0px 0px 10px 5px #FF6565;
-    box-shadow: 0px 0px 10px 5px #FF6565 
+  -webkit-box-shadow: 0px 0px 10px 5px #ff6565;
+  -moz-box-shadow: 0px 0px 10px 5px #ff6565;
+  box-shadow: 0px 0px 10px 5px #ff6565;
 }
-
