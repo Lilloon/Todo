@@ -1,0 +1,37 @@
+.taskCard {
+  position: relative;
+  margin: 10px;
+  transition: 0.2s ease;
+  width: 50%;
+  display: flex;
+  min-height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.taskCard:hover {
+  transform: scale(1.005);
+}
+
+.buttons {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.additional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,9 +1,19 @@
 .icon {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
+  transition: 0.15s ease;
 }
 
 .button {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+.button :hover {
+  transform: scale(1.1);
+}
+
+.button:active {
+  transform: scale(1.15);
 }
