@@ -1,7 +1,14 @@
 .clientPanel {
-  width: 25%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
   background: #4a4a4a;
-  height: 500px;
   border-radius: 10px;
   padding: 20px;
+}
+
+.buttonWrapper {
+  margin-top: 10px;
+  width: 25%;
 }

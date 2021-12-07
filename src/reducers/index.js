@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import selectedColorReducer from "./selectedColorReducer";
+import tasksReducer from "./tasksReducer";
 
 const rootReducers = () =>
   combineReducers({
-    selectedColorReducer,
+    tasksReducer,
   });
 export default rootReducers;

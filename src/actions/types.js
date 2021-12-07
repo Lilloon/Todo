@@ -1,3 +1,3 @@
-export const SELECTED_COLOR_TYPES = {
-  SET_SELECTED_COLOR: "[REDUX][SET_SELECTED_COLOR]",
+export const TASK_TYPES = {
+  ADD_TASK: "[REDUX][ADD_TASK]",
 };
