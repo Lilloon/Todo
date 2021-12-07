@@ -12,7 +12,7 @@ class TaskCardsList extends React.Component {
         {this.taskList?.length !== 0 && this.taskList ? (
           <div>
             {this.taskList.map((card) => (
-              <TaskCard card={card} />
+              <TaskCard card={card} key={card.id} />
             ))}{" "}
           </div>
         ) : (

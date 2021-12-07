@@ -5,8 +5,12 @@ import Title from "../../atoms/Title/Title";
 import ButtonWithIcon from "../../atoms/ButtonWithIcon/ButtonWithIcon";
 import trash from "../../assets/img/trash.png";
 import arrow from "../../assets/img/arrow.png";
+import checked from '../../assets/img/check.png'
 import styled from "styled-components";
 import { colorObj } from "../../assets/colorObj";
+import store from '../../store/store'
+import { removeTask, setDoneTask } from "../../actions/tasksAction";
+
 
 export default class TaskCard extends React.Component {
   constructor(props) {
@@ -34,12 +38,21 @@ export default class TaskCard extends React.Component {
       this.setState({ isOpen: !this.state.isOpen });
       console.log(this.state.isOpen);
     };
+    const deleteTask = (id) => {
+      store.dispatch(removeTask(id))
+    }
+    const setDone = (id) => {
+      store.dispatch(setDoneTask(id))
+    }
     return (
       <Border className={style.taskCard}>
         <div className={style.main}>
           <Title title={this.card.inputValue} />
           <div className={style.buttons}>
-            <ButtonWithIcon icon={trash} />{" "}
+            <div className={this.card?.Done ? style.checked : ''}>
+              <ButtonWithIcon icon={checked} onClick={() => {setDone(this.card?.id)}}  alt='Done!'/>
+            </div>
+            <ButtonWithIcon onClick={() => {deleteTask(this.card?.id)}} icon={trash} />
           </div>
         </div>
         {this.card?.isRadioActive ? (

@@ -1,3 +1,6 @@
 export const TASK_TYPES = {
   ADD_TASK: "[REDUX][ADD_TASK]",
+  REMOVE_TASK: "[REDUX][REMOVE_TASK]",
+  SET_DONE_TASK: "[REDUX][SET_DONE_TASK]",
 };
+
