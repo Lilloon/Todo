@@ -9,6 +9,28 @@ import Button from "../molecules/Button/Button";
 import { addTask } from "../actions/tasksAction";
 import store from "../store/store";
 
+const generateId = () => {
+  return Math.floor(Math.random() * 1000000);
+};
+const colors = [
+  {
+    id: 1,
+    color: "red",
+  },
+  {
+    id: 2,
+    color: "blue",
+  },
+  {
+    id: 3,
+    color: "green",
+  },
+  {
+    id: 4,
+    color: "white",
+  },
+];
+console.log("hi");
 export default class ClientPanel extends React.Component {
   constructor(props) {
     super(props);
@@ -22,9 +44,6 @@ export default class ClientPanel extends React.Component {
     };
   }
   render() {
-    const generateId = () => {
-      return Math.floor(Math.random() * 1000000);
-    }
     const onChangeInput = (value) => {
       this.setState({ inputValue: value });
     };
@@ -38,7 +57,6 @@ export default class ClientPanel extends React.Component {
     const onChangeTextArea = (value) => {
       this.setState({ textAreaValue: value });
     };
-
     const onClickAdd = () => {
       if (!this.state.inputValue.trim()) {
         this.setState({
@@ -54,7 +72,14 @@ export default class ClientPanel extends React.Component {
         this.state.inputValue &&
         (this.state.isRadioActive ? this.state.textAreaValue : true)
       ) {
-        store.dispatch(addTask({id:generateId(), ...this.state, date: new Date(), isDone:false }));
+        store.dispatch(
+          addTask({
+            id: generateId(),
+            ...this.state,
+            date: new Date(),
+            isDone: false,
+          })
+        );
         this.setState({
           inputValue: "",
           textAreaValue: "",
@@ -64,24 +89,7 @@ export default class ClientPanel extends React.Component {
         });
       }
     };
-    const colors = [
-      {
-        id: 1,
-        color: "red",
-      },
-      {
-        id: 2,
-        color: "blue",
-      },
-      {
-        id: 3,
-        color: "green",
-      },
-      {
-        id: 4,
-        color: "white",
-      },
-    ];
+
     return (
       <div className={style.clientPanel}>
         <Title title="Let's append new task!" />
@@ -90,6 +98,7 @@ export default class ClientPanel extends React.Component {
           onChange={onChangeInput}
           isError={this.state.isInputError}
           placeholder="Write some text"
+          handler={onClickAdd}
         />
         <ColorsGroup
           colors={colors}

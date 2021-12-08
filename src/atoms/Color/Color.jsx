@@ -13,30 +13,23 @@ export default class Color extends React.Component {
     this.onClick = this.props.onClick;
     this.color = this.props.color;
     this.isActive = this.props.isActive;
-    const GlowRect = styled.div`
-      &:hover {
-        -webkit-box-shadow: 0px 0px 10px 2px ${colorObj[this.color]};
-        -moz-box-shadow: 0px 0px 10px 2px ${colorObj[this.color]};
-        box-shadow: 0px 0px 10px 2px ${colorObj[this.color]};
-      }
-      ${this?.isActive
-        ? `
-                -webkit-box-shadow: 0px 0px 10px 5px ${
-                  colorObj[this.color]
-                } !important;
-                -moz-box-shadow: 0px 0px 10px 5px ${
-                  colorObj[this.color]
-                }!important;
-                box-shadow: 0px 0px 10px 5px ${colorObj[this.color]}!important
-            `
-        : ""}
-    `;
-    const InnerRect = styled.div`
-      background-color: ${colorObj[this.color]};
-    `;
+    const GlowRect = styled.div``;
     return (
-      <GlowRect onClick={onClick} className={style.border}>
-        <InnerRect className={`${style.innerRect} ${this.color}`}></InnerRect>
+      <GlowRect
+        style={
+          this?.isActive
+            ? {
+                WebkitBoxShadow: `0px 0px 10px 5px ${colorObj[this.color]}`,
+              }
+            : {}
+        }
+        onClick={onClick}
+        className={style.border}
+      >
+        <div
+          style={{ background: colorObj[this.color] }}
+          className={`${style.innerRect} ${this.color}`}
+        ></div>
       </GlowRect>
     );
   }
