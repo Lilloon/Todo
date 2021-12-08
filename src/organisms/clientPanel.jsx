@@ -22,6 +22,9 @@ export default class ClientPanel extends React.Component {
     };
   }
   render() {
+    const generateId = () => {
+      return Math.floor(Math.random() * 1000000);
+    }
     const onChangeInput = (value) => {
       this.setState({ inputValue: value });
     };
@@ -35,6 +38,7 @@ export default class ClientPanel extends React.Component {
     const onChangeTextArea = (value) => {
       this.setState({ textAreaValue: value });
     };
+
     const onClickAdd = () => {
       if (!this.state.inputValue.trim()) {
         this.setState({
@@ -50,12 +54,13 @@ export default class ClientPanel extends React.Component {
         this.state.inputValue &&
         (this.state.isRadioActive ? this.state.textAreaValue : true)
       ) {
-        store.dispatch(addTask({ ...this.state, date: new Date() }));
+        store.dispatch(addTask({id:generateId(), ...this.state, date: new Date(), isDone:false }));
         this.setState({
           inputValue: "",
           textAreaValue: "",
           isInputError: false,
           isTextAreaError: false,
+          isRadioActive: false,
         });
       }
     };
